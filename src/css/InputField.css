@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400;700&display=swap");
+.input {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.input > * {
+  font-family: "Josefin Slab", serif;
+}
+
+.input__box {
+  font-size: 2em;
+  border-radius: 55px;
+  padding: 15px 25px;
+  width: 50vw;
+  border: none;
+}
+.input__box:focus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+}
+
+.input__submit {
+  position: absolute;
+  font-weight: 700;
+  color: rgb(61, 61, 61);
+  background: #1CB5E0;
+  border: none;
+  font-size: 1.5em;
+  border-radius: 55px;
+  padding: 15px;
+  transition: 0.2s;
+  right: 5px;
+}
+.input__submit:hover {
+  background: #52d0f3;
+}
+.input__submit:active {
+  transform: scale(0.8);
+}/*# sourceMappingURL=InputField.css.map */
