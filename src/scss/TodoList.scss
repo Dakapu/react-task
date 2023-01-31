@@ -1,0 +1,12 @@
+@use "variables" as v;
+
+.todos {
+    font-family: v.$font-main;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    background: slategray;
+    margin-top: 2em;
+}

@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400;700&display=swap");
+.todos {
+  font-family: "Josefin Slab", serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  background: slategray;
+  margin-top: 2em;
+}/*# sourceMappingURL=TodoList.css.map */
