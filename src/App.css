@@ -1,4 +1,9 @@
-h1 {
-  background: rgb(223, 163, 163);
-  font-size: larger;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400;700&display=swap");
+.heading {
+  background: rgb(78, 63, 63);
+  font-size: 12em;
+  font-family: "Josefin Slab", serif;
+  font-weight: 700;
+  color: white;
+  padding: 5px;
 }/*# sourceMappingURL=App.css.map */
