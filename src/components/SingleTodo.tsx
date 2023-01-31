@@ -1,5 +1,8 @@
 import React from 'react'
+import '../css/SingleTodo.css';
 import { Todo } from '../model/Todo';
+import { AiFillEdit, AiFillDelete } from 'react-icons/ai';
+import { MdDone } from 'react-icons/md';
 
 interface Props {
     todo: Todo;
@@ -9,9 +12,14 @@ interface Props {
 
 const SingleTodo: React.FC<Props> = ({ todo, todos, setTodos }: Props) => {
     return (
-        <div>
-
-        </div>
+        <form className='todos_single'>
+            <span className="todos_single_text">{todo.todo}</span>
+            <div>
+                <span className="icon"><AiFillEdit /></span>
+                <span className="icon"><AiFillDelete /></span>
+                <span className="icon"><MdDone /></span>
+            </div>
+        </form>
     )
 }
 

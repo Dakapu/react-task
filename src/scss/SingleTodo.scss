@@ -1,0 +1,31 @@
+@use "variables" as v;
+
+.todos_single {
+    position: relative;
+    font-family: v.$font-main;
+    font-size: 2em;
+    margin: 10px;
+    padding: 15px;
+    width: 70%;
+    display: flex;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+
+    >div {
+        position: absolute;
+        right: 5px;
+
+        >.icon {
+            padding: 5px;
+        }
+    }
+
+}
+
+@media(max-width:800px) {
+    .todos_single {
+        font-size: 1.2em;
+    }
+}

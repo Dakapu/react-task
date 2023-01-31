@@ -7,6 +7,11 @@
     flex-direction: column;
     align-items: center;
     width: 60%;
-    background: slategray;
     margin-top: 2em;
+}
+
+@media(max-width:800px) {
+    .todos {
+        width: 90vw;
+    }
 }
