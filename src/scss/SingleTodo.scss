@@ -1,17 +1,22 @@
 @use "variables" as v;
 
-.todos_single {
+.todo_single_basic {
     position: relative;
     font-family: v.$font-main;
-    font-size: 2em;
-    margin: 10px;
-    padding: 15px;
     width: 70%;
     display: flex;
     border-radius: 5px;
     background-color: whitesmoke;
     flex-wrap: wrap;
     word-wrap: break-word;
+}
+
+.todos_single {
+    @extend .todo_single_basic;
+
+    font-size: 2em;
+    margin: 10px;
+    padding: 15px;
 
     >div {
         position: absolute;
@@ -22,6 +27,14 @@
         }
     }
 
+}
+
+.todos_single--edit {
+    @extend .todo_single_basic;
+
+    font-size: 1em;
+    border: none;
+    outline: none;
 }
 
 @media(max-width:800px) {
